@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package>
+  <name>mobility_base_bringup</name>
+  <version>0.0.1</version>
+  <description>
+    Startup scripts and launch files for the Dataspeed Inc. Mobility Base
+  </description>
+
+  <license>BSD</license>
+  <author>Dataspeed Inc.</author>
+  <maintainer email="khallenbeck@dataspeedinc.com">Dataspeed Inc.</maintainer>
+  <url type="website">http://dataspeedinc.com</url>
+  <url type="repository">https://bitbucket.org/dataspeedinc/mobility_base_common</url>
+  <url type="bugtracker">https://bitbucket.org/dataspeedinc/mobility_base_common/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+
+  <!-- Mobility Base SDK -->
+  <run_depend>mobility_base_description</run_depend>
+  <run_depend>mobility_base_core_msgs</run_depend>
+
+  <!-- Launch Depends -->
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>image_proc</run_depend>
+  <run_depend>laser_filters</run_depend>
+  <run_depend>mobility_base_pointcloud_filter</run_depend>
+
+  <!-- Accessory Depends -->
+  <run_depend>hokuyo_node</run_depend>
+  <run_depend>urg_node</run_depend>
+  <run_depend>pepperl_fuchs_r2000</run_depend>
+  <run_depend>velodyne</run_depend>
+
+  <!-- Service Install scripts -->
+  <run_depend>robot_upstart</run_depend>
+
+  <export>
+  </export>
+
+</package>
